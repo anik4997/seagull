@@ -1,9 +1,22 @@
 @media (max-width: 1024px) {
+  /* new code */
+  .wrapper #show-menu:checked ~ .menu-icon i::before{
+    position: fixed;
+  }
+  .menu-icon{
+    z-index: 99999;
+  }
 }
 @media (max-width: 991px) {
   /* new code */
+  .wrapper #show-menu:checked ~ .menu-icon i::before{
+    position: fixed;
+  }
   nav .content .links{
     top: 0px; 
+  }
+  .menu-icon{
+    z-index: 99999;
   }
   nav{
     z-index: 9999;
@@ -27,11 +40,25 @@
 
 @media (max-width: 767px) {
   /* new code */
+  .wrapper #show-menu:checked ~ .menu-icon i::before{
+    position: fixed;
+  }
+  .header-top{
+    position: sticky;
+    z-index: 99999;
+  }
+  .menu-icon{
+    z-index: 99999;
+  }
   nav{
     z-index: 9999;
   }
   .product_list {
     text-align: center;
+}
+nav .content .links{
+  top: 0px; 
+  padding-top: 66px;
 }
   .shop{
     padding-top: 20px;
@@ -194,13 +221,30 @@
   /* .section_books{
     height: 200vh;
   }  */
+  .wrapper #show-menu:checked ~ .menu-icon i::before{
+    position: fixed;
+  }
+  .email{
+    display: block;
+    color: black;
+    font-size: 15px;
+  }
   nav{
     z-index: 9999;
   }
   .product_list {
     text-align: center;
 }
-  
+.header-top{
+  position: sticky;
+  z-index: 99999;
+}
+nav .content .links{
+  top: 0px; 
+  padding-top: 66px;
+}
+.menu-icon{
+  z-index: 99999;
 }
 @media (max-width: 330px) {
   /* prayment start  */
