@@ -196,7 +196,8 @@ nav .content .links {
     top: 44px;
     left: -100%;
     margin-left: 0;
-    max-width: 268px;
+    /* commented out max width */
+    /* max-width: 268px; */
     overflow-y: auto;
     padding-bottom: 120px;
     transition: all 0.3s ease;
@@ -336,7 +337,10 @@ nav .content .links {
   }
 }
 @media screen and (max-width: 1390px) {
-  
+  /* new code */
+  .menu-icon{
+    z-index: 99999;
+  }
   .wrapper nav {
     max-width: 100%;
     padding: 0 0px;
@@ -363,7 +367,8 @@ nav .content .links {
     margin: 0 20px;
   }
   nav .content .links {
-    margin-left: 10px;
+    /* margin changed 10 to 0 */
+    margin-left: 0px;
   }
   .content .links li a {
     padding: 8px 5px;
