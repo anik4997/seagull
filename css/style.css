@@ -44,14 +44,16 @@ body {
   font-weight: 300;
 }
 ::-webkit-scrollbar {
-  width: 0.625rem;
+  /* width commented out and display added */
+  /* width: 0.625rem; */
+  display: none;
 }
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
   background: var(--white-color);
 }
 ::-webkit-scrollbar-thumb {
   background: var(--primary-color);
-}
+} */
 h1 {
   font-family: var(--primary-font);
   font-size: 3rem;
@@ -339,6 +341,14 @@ p {
   color: #737373;
 }
 /* new style */
+.container-fluid{
+  padding-right: var(--bs-gutter-x,0rem) !important;
+    padding-left: var(--bs-gutter-x,0rem) !important;
+}
+.row{
+  margin-right: calc(var(--bs-gutter-x) * 0) !important;
+    margin-left: calc(var(--bs-gutter-x) * 0) !important;
+}
 .img-fluid{
     border: 0px solid;
     border-radius: 3px;
@@ -348,6 +358,12 @@ p {
 .img-fluid:hover{
   padding: 0px;
   transition: 0.3s;
+}
+.email{
+  color: black !important;
+  text-align: center;
+  font-weight: bold;
+  
 }
   /* .section_books{
   margin-bottom: 10px;
